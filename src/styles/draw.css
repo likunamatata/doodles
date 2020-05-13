@@ -1,0 +1,41 @@
+.mouseOn{
+  fill: red;
+}
+
+.bubble {
+      height: 18px;
+      width: 18px;
+      fill: rgba(18, 111, 51, 0.8);
+    }
+
+.clicked{
+  height: 18px;
+  width: 18px;
+  fill: purple;
+}
+
+.bubble:hover {
+      fill: orange;
+    }
+
+svg{
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  margin: 2px;
+}
+
+h1{
+  color: orange;
+  font-weight: bold;
+}
+
+button{
+  border-radius: 30%;
+  padding: 10px;
+  margin: 10px;
+  background: rgba(215,150,230,1);
+  font-size: 18px;
+  color:rgba(0,0,0,0.6);
+  border: 1px white solid;
+}
