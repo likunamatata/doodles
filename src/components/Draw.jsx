@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/draw.css';
 import * as d3 from 'd3';
+import {drawBubbles, changeFill} from '.././helpers/bubble-helpers'
 
 class Draw extends Component {
   constructor(props) {
@@ -14,34 +15,11 @@ class Draw extends Component {
 
 
   componentDidMount = async () => {
-    this.fillBubbles(this.state.bubbleCount)
-    this.drawBubbles()
+    drawBubbles(this.state.bubbleArr)
   }
-
-  fillBubbles = () => {
-    for (let i = 1; i < this.state.bubbleCount+1; i++){
-      this.state.bubbleArr.push(i)
-    }
-  }
-  
-  drawBubbles = () => {
-    console.log(this.state.bubbleArr)
-    d3.select('.bubbles-container')
-      .append('svg')
-      .selectAll('rect')
-        .data(this.state.bubbleArr)
-        .enter()
-        .append('rect')
-      .attr("x", (d,i) => i%100 * 20)
-      .attr("y", (d,i) => Math.floor(i/100)%100 * 20)
-      .attr('class', 'bubble')
-    .on('click', function (){d3.select(this).attr('class', 'clicked')})
-  }
-
 
   render() {
     const { bubbleArr } = this.state
-    console.log(bubbleArr)
     const bubbles = bubbleArr.length==0 ? '' : bubbleArr.map(
       bubble => {
         return (

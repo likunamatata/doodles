@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
-import Draw from './components/Draw'
+import Routes from './components/Routes'
+import Nav from './components/Nav'
+
+
 
 
 function App() {
   return (
     <div className="App">
-      <Draw/>
+      <Nav />
+      <Routes />
     </div>
   );
 }
