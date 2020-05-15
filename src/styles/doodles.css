@@ -1,0 +1,59 @@
+#ctr{
+  width: 1000px;
+  height: 1000px;
+  background-color: black;
+ 
+  overflow: visible;
+}
+
+#rect{
+  fill:red;
+  width: 100px;
+  height: 100px;
+  stroke:  green;
+  stroke-width: 10px;
+  x: 25px;
+  y: 25px;
+}
+
+#circle{
+  r: 50px;
+  cx: 200px;
+  cy: 75px;
+  fill: purple;
+  stroke: pink;
+  stroke-width: 10px;
+}
+
+#el{
+  rx:100;
+  ry:50;
+  cx: 400;
+  cy: 75;
+  fill: orange;
+  stroke: white;
+  stroke-width: 10px;
+}
+
+#line{
+  stroke: lightblue;
+  stroke-width: 10px;
+}
+
+#polyg{
+  fill: lightpink;
+  stroke: red;
+  stroke-width:1px;
+}
+
+#polyl{
+  fill: lavender;
+  stroke: red;
+  stroke-width:1px;
+}
+
+#path{
+  fill: none;
+  stroke: white;
+  stroke-width: 10px;
+}

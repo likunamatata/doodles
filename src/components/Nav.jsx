@@ -8,6 +8,7 @@ function Nav() {
     <div className="Nav">
        <Link to='/'>Home</Link>
       <Link to='/minesweeper'>Minesweeper</Link>
+      <Link to='/doodles'>Doodles</Link>
     </div>
   );
 }
